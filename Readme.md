@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ilona Svidritskaia](https://up.htmlacademy.ru/adaptive/26/user/1056375).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
