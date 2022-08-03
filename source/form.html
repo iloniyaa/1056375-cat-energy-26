@@ -29,7 +29,7 @@
             Каталог продукции
           </a>
         </li>
-        <li class="navigation__item  navigation__item--current">
+        <li class="navigation__item navigation__item--current">
           <a class="navigation__link">
             Подбор программы
           </a>
@@ -51,11 +51,11 @@
     <form class="custom__form order-form" method="post" action="https://echo.htmlacademy.ru/">
 
       <fieldset class="order-form__group">
-        <legend class="vusually-hidden">
+        <legend class="visually-hidden">
           О коте
         </legend>
 
-        <ul class="order-form__list--text">
+        <ul class="order-form__list order-form__text">
           <li class="order-form__item text">
             <label class="text__label" for="name">
               Имя:*
@@ -82,7 +82,7 @@
           Цель
         </legend>
 
-        <ul class="order-form__list--radio">
+        <ul class="order-form__list order-form__radio">
           <li class="order-form__item radio">
             <input class="radio__input--checked" type="radio" id="weight-loss" name="goal" value="weight-loss" checked>
             <label class="radio__label" for="weight-loss">
@@ -109,7 +109,7 @@
           Контактные данные (владельца кота)
         </legend>
 
-        <ul class="order-form__list--text">
+        <ul class="order-form__list order-form__text">
           <li class="order-form__item text">
             <label class="text__label" for="email">
               E-mail:*
@@ -139,7 +139,7 @@
           Дополнительно
         </legend>
 
-        <ul class="order-form__item">
+        <ul class="order-form__item order-form__checkbox">
           <li class="order-form__item checkbox">
             <input class="checkbox__input--checked" type="checkbox" name="substitute" id="substitute" checked>
             <label class="checkbox__label" for="substitute">
@@ -166,6 +166,7 @@
           </li>
         </ul>
       </fieldset>
+
       <button class="order-form__button button" type="submit">
         отправить заявку
       </button>
