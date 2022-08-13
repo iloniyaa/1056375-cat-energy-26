@@ -7,7 +7,12 @@
 
 .page__body {
   min-height: 100%;
-  margin: 0;
+  min-width: 320px;
+  margin: 0 auto;
   background-color: @white;
   color: @black;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+  }
 }

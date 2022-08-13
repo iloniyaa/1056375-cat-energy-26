@@ -1,11 +1,32 @@
 .programs {
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 110px;
+  }
 }
 
 .programs__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
 }
 
 .programs__item {
@@ -13,9 +34,6 @@
   padding: 30px 33px 10px 20px;
 }
 
-.programs__item:not(:last-child) {
-  margin-bottom: 20px;
-}
 
 .programs__title {
   font-weight: 400;
