@@ -1,6 +1,14 @@
 .card-description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: @text-dark-grey;
+}
+
+.card-description__value {
+  margin: 0;
+  justify-self: end;
 }
