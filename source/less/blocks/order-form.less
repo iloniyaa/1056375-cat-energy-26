@@ -4,6 +4,15 @@
   text-transform: uppercase;
 }
 
+.order-form__wrapper {
+  display: grid;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+}
+
 .order-form__title {
   font-size: 24px;
   line-height: 26px;
@@ -14,4 +23,25 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.order-form__contacts {
+  display: grid;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 78px;
+  }
+}
+
+.order-form__checkbox {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

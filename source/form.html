@@ -52,67 +52,69 @@
 
     <form class="custom__form order-form" method="post" action="https://echo.htmlacademy.ru/">
 
-      <fieldset class="order-form__group">
-        <legend class="visually-hidden">
-          О коте
-        </legend>
+      <div class="order-form__wrapper">
+        <fieldset class="order-form__group">
+          <legend class="visually-hidden">
+            О коте
+          </legend>
 
-        <ul class="order-form__list order-form__text">
-          <li class="order-form__item form-text">
-            <label class="form-text__label" for="name">
-              Имя:*
-            </label>
-            <input class="form-text__field" type="text" id="name" name="name" placeholder="барсик" required>
-          </li>
-          <li class="order-form__item form-text">
-            <label class="form-text__label" for="weight">
-              Вес (кг):*
-            </label>
-            <input class="form-text__field" type="text" id="weight" name="weight" placeholder="7" required>
-          </li>
-          <li class="order-form__item form-text">
-            <label class="form-text__label" for="age">
-              Возраст (лет):
-            </label>
-            <input class="form-text__field" type="text" id="age" name="age" placeholder="7">
-          </li>
-        </ul>
-      </fieldset>
+          <ul class="order-form__list order-form__text">
+            <li class="order-form__item form-text">
+              <label class="form-text__label" for="name">
+                Имя:*
+              </label>
+              <input class="form-text__field" type="text" id="name" name="name" placeholder="барсик" required>
+            </li>
+            <li class="order-form__item form-text">
+              <label class="form-text__label" for="weight">
+                Вес (кг):*
+              </label>
+              <input class="form-text__field" type="text" id="weight" name="weight" placeholder="7" required>
+            </li>
+            <li class="order-form__item form-text">
+              <label class="form-text__label" for="age">
+                Возраст (лет):
+              </label>
+              <input class="form-text__field" type="text" id="age" name="age" placeholder="7">
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset class="order-form__group">
-        <legend class="vusually-hidden">
-          Цель
-        </legend>
+        <fieldset class="order-form__group">
+          <legend class="visually-hidden">
+            Цель
+          </legend>
 
-        <ul class="order-form__list order-form__radio">
-          <li class="order-form__item form-radio">
-            <input class="form-radio__input form-radio__input--checked" type="radio" id="weight-loss" name="goal"
-              value="weight-loss" checked>
-            <label class="form-radio__label" for="weight-loss">
-              Похудение
-            </label>
-          </li>
-          <li class="order-form__item form-radio">
-            <input class="form-radio__input" type="radio" id="weight-gain" name="goal" value="weight-gain">
-            <label class="form-radio__label" for="weight-gain">
-              Набор массы
-            </label>
-          </li>
-          <li class="order-form__item form-radio">
-            <input class="form-radio__input" type="radio" id="unsertain" name="goal" value="unsertain">
-            <label class="form-radio__label" for="unsertain">
-              Не знаю (Нужен ваш совет)
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+          <ul class="order-form__list order-form__radio">
+            <li class="order-form__item form-radio">
+              <input class="form-radio__input form-radio__input--checked" type="radio" id="weight-loss" name="goal"
+                value="weight-loss" checked>
+              <label class="form-radio__label" for="weight-loss">
+                Похудение
+              </label>
+            </li>
+            <li class="order-form__item form-radio">
+              <input class="form-radio__input" type="radio" id="weight-gain" name="goal" value="weight-gain">
+              <label class="form-radio__label" for="weight-gain">
+                Набор массы
+              </label>
+            </li>
+            <li class="order-form__item form-radio">
+              <input class="form-radio__input" type="radio" id="unsertain" name="goal" value="unsertain">
+              <label class="form-radio__label" for="unsertain">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="order-form__group">
         <legend class="order-form__title">
           Контактные данные (владельца кота)
         </legend>
 
-        <ul class="order-form__list order-form__text">
+        <ul class="order-form__list order-form__contacts">
           <li class="order-form__item form-text">
             <label class="form-text__label" for="email">
               E-mail:*
@@ -172,17 +174,20 @@
         </ul>
       </fieldset>
 
-      <button class="order-form__button button" type="submit">
-        отправить заявку
-      </button>
+      <div class="custom__wrapper">
+        <button class="custom__button button" type="submit">
+          отправить заявку
+        </button>
+
+        <p class="custom__notice">
+          * — Обязательные поля
+        </p>
+      </div>
     </form>
-    <p class="custom__notice">
-      * — Обязательные поля
-    </p>
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts">
       <h2 class="visually-hidden">
         Как нас найти
       </h2>
@@ -194,10 +199,10 @@
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
-          <div class="contacts__wrapper">
-            <img class="contacts__map" src="img/location.jpg" width="320" height="362"
-              alt="Карта с местоположением магазина Cat Energy.">
-          </div>
+        </div>
+        <div class="contacts__wrapper">
+          <img class="contacts__map" src="img/location.jpg" width="100%" height="362"
+            alt="Карта с местоположением магазина Cat Energy.">
         </div>
       </address>
     </section>
@@ -219,21 +224,21 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Vkontakte
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Youtube
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Telegram
               </span>
             </a>
@@ -243,7 +248,7 @@
 
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__title">
-          <span class="visually-hidden">
+          <span class="visually-hidde">
             Разработано в
           </span>
           HTML Academy
