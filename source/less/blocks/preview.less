@@ -2,15 +2,29 @@
   background-color: @green;
   color: @white;
   padding: 27px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 27px 190px;
+  }
 }
 
 .preview__title {
+  text-align: center;
   color: @white;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
 
 .preview__text {
+  text-align: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 14px;

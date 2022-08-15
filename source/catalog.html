@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -47,14 +48,14 @@
       <h2 class="visually-hidden">
         Список продуктов Cat Energy
       </h2>
-      <ul class="catalog__list">
+      <ul class="catalog__list catalog__list--foods">
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy PRO 500 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-1.png" width="68" height="86"
               alt="Cat Energy PRO 500 г с курицей">
           </a>
@@ -72,12 +73,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy PRO 1000 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-2.png" width="84" height="100"
               alt="Cat Energy PRO 1000 г с курицей">
           </a>
@@ -95,12 +96,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy PRO 500 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-3.png" width="68" height="78" alt="Cat Energy PRO 500 г с рыбой">
           </a>
           <dl class="card__list card-description">
@@ -117,12 +118,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy PRO 1000 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-4.png" width="84" height="100"
               alt="Cat Energy PRO 1000 г с рыбой">
           </a>
@@ -140,12 +141,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy SLIM 500 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-5.png" width="68" height="78"
               alt="Cat Energy SLIM 500 г с гречкой">
           </a>
@@ -163,12 +164,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy SLIM 1000 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-6.png" width="84" height="100"
               alt="Cat Energy SLIM 1000 г с гречкой">
           </a>
@@ -186,12 +187,12 @@
         </li>
 
         <li class="catalog__item card">
-          <a class="card__link" href="#">
+          <a class="card__link card__link--title" href="#">
             <h3 class="card__title">
               Cat Energy SLIM 500 г
             </h3>
           </a>
-          <a class="card__link" href="#">
+          <a class="card__link card__link--image" href="#">
             <img class="card__image" src="img/catalog-7.png" width="72" height="84" alt="Cat Energy SLIM 500 г с рисом">
           </a>
           <dl class="card__list card-description">
@@ -206,19 +207,21 @@
             заказать
           </button>
         </li>
-      </ul>
 
-      <div class="show-more">
-        <p class="show-more__header">
-          Показать еще 100500 товаров
-        </p>
-        <p class="show-more__text">
-          На самом деле вкусов гораздо больше!
-        </p>
-        <button class="show-more__button button" type="button">
-          показать все
-        </button>
-      </div>
+        <li class="catalog__item card--show-more">
+          <div class="show-more">
+            <p class="show-more__header">
+              Показать еще 100500 товаров
+            </p>
+            <p class="show-more__text">
+              На самом деле вкусов гораздо больше!
+            </p>
+            <button class="show-more__button button" type="button">
+              показать все
+            </button>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="catalog__supplements">
@@ -226,7 +229,7 @@
         Дополнительные товары
       </h2>
 
-      <ul class="catalog__list">
+      <ul class="catalog__list catalog__list--supplements">
         <li class="catalog__item supplement-card">
           <h3 class="supplement-card__title">
             сахарозаменитель
@@ -279,16 +282,16 @@
           </button>
         </li>
       </ul>
-    </section>
 
-    <section class="catalog__promo">
-      <div class="catalog__wrapper">
-        <h2 class="visually-hidden">
-          Акция
-        </h2>
-        <p class="catalog__text">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
+      <div class="catalog__promo">
+        <div class="catalog__promo--wrapper">
+          <h2 class="visually-hidden">
+            Акция
+          </h2>
+          <p class="catalog__text">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
   </main>
@@ -308,7 +311,7 @@
           </p>
         </div>
         <div class="contacts__wrapper">
-          <img class="contacts__map" src="img/location.jpg" width="320" height="362"
+          <img class="contacts__map" src="img/location.jpg" width="100%" height="362"
             alt="Карта с местоположением магазина Cat Energy.">
         </div>
       </address>
@@ -331,21 +334,21 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Vkontakte
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Youtube
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Telegram
               </span>
             </a>
@@ -355,7 +358,7 @@
 
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__title">
-          <span class="visually-hidden">
+          <span class="visually-hidde">
             Разработано в
           </span>
           HTML Academy

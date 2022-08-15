@@ -3,15 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
+    <a class="page-header__logo-icon logo" href="index.html">
       <!-- пока вставлены через img для наглядности  -->
       <img class="logo__mobile" src="img/logo-mobile.svg" alt="Логотип магазина Кэт энерджи.">
+    </a>
+    <a class="page-header__logo-text logo" href="index.html">
       <img class="logo__text" src="img/logo-text.svg" alt="Cat Energy.">
     </a>
 
@@ -121,15 +124,22 @@
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <dl class="promo__list">
-        <dt class="promo__name">снижение веса</dt>
-        <dd class="promo__value">5 кг</dd>
-        <dt class="promo__name">затрачено времени</dt>
-        <dd class="promo__value">60 дней</dd>
-      </dl>
+
+      <div class="promo__stats-wrapper">
+        <div class="promo__stats">
+          <p class="promo__value">5 кг</p>
+          <p class="promo__name">снижение веса</p>
+        </div>
+        <div class="promo__stats">
+          <p class="promo__value">60 дней</p>
+          <p class="promo__name">затрачено времени</p>
+        </div>
+      </div>
+
       <p class="promo__price">
         Затраты на питание: 15 000 руб.
       </p>
+
       <div class="promo__cats cat">
         <img class="cat__image cat__image--active" src="img/cat-fat.png" width="280" height="232"
           alt="Фото кота до перехода на Cat Energy.">
@@ -140,7 +150,7 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__contacts contacts">
+    <section class="page-footer__contacts contacts contacts--index">
       <h2 class="visually-hidden">
         Как нас найти
       </h2>
@@ -154,7 +164,7 @@
           </p>
         </div>
         <div class="contacts__wrapper">
-          <img class="contacts__map" src="img/location.jpg" width="320" height="362"
+          <img class="contacts__map" src="img/location.jpg" width="100%" height="362"
             alt="Карта с местоположением магазина Cat Energy.">
         </div>
       </address>
@@ -177,21 +187,21 @@
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Vkontakte
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Youtube
               </span>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">
+              <span class="visually-hidde">
                 Telegram
               </span>
             </a>
@@ -201,7 +211,7 @@
 
       <section class="page-footer__copyright copyright">
         <h2 class="copyright__title">
-          <span class="visually-hidden">
+          <span class="visually-hidde">
             Разработано в
           </span>
           HTML Academy

@@ -1,6 +1,14 @@
 .catalog {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .catalog__header {
@@ -10,17 +18,41 @@
 }
 
 .catalog__list {
+  display: grid;
+  grid-template-columns: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.catalog__item:not(:last-child) {
-  margin-bottom: 19px;
+.catalog__list--foods {
+  gap: 19px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+  }
 }
 
 .catalog__supplements {
-  padding-top: 25px;
+  display: grid;
+  gap: 36px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 86px;
+  }
+}
+
+.catalog__list--supplements {
+  display: grid;
+  grid-column: 1/2;
 }
 
 .catalog__title {
@@ -28,7 +60,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 36px;
+  margin-top: 50px;
   padding: 0;
 }
 
@@ -36,9 +68,10 @@
   height: 200px;
   background-image: url("../img/catalog-cat-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.catalog__wrapper {
+.catalog__promo--wrapper {
   height: inherit;
   background-color: @green;
   opacity: 0.85;
@@ -50,6 +83,7 @@
   line-height: 20px;
   font-weight: 400;
   color: @white;
+  margin: 0;
 }
 
 .catalog__footer {

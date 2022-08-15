@@ -19,7 +19,15 @@
   line-height: 16px;
 }
 
-.custom__footer {
-  background-color: @basic-grey;
-  margin-bottom: 39px;
+.custom__wrapper {
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 81px;
+  }
 }
