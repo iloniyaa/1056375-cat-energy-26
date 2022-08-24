@@ -1,10 +1,15 @@
 .preview {
-  background-color: @green;
+  background-color: @white;
+  background-image: url("../img/index-background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: @white;
   padding: 27px 20px;
 
   @media (min-width: @tablet-width) {
     padding: 27px 117px;
+    background-image: none;
+    color: @black;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,7 +24,9 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
+    width: 415px;
     text-align: left;
+    color: @black;
   }
 }
 
@@ -31,4 +38,23 @@
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    color: @black;
+  }
+}
+
+.preview__picture {
+  display: block;
+}
+
+.preview__button {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+  }
 }

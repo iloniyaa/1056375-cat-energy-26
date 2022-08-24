@@ -10,18 +10,20 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo-icon logo" href="index.html">
-      <!-- пока вставлены через img для наглядности  -->
-      <img class="logo__mobile" src="img/logo-mobile.svg" alt="Логотип магазина Кэт энерджи.">
-    </a>
-    <a class="page-header__logo-text logo" href="index.html">
-      <img class="logo__text" src="img/logo-text.svg" alt="Cat Energy.">
-    </a>
-
-    <nav class="page-header__navigation navigation">
-      <button class="navigation__toggle" type="button">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo-icon" href="index.html">
+        <!-- пока вставлены через img для наглядности  -->
+        <img src="img/logo-mobile.svg" width="" height=" " alt="Логотип магазина Кэт энерджи.">
+      </a>
+      <a class="page-header__logo-text" href="index.html">
+        <img src="img/logo-text.svg" width="" height=" " alt="Cat Energy.">
+      </a>
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+
+    <nav class="page-header__navigation navigation navigation--opened">
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current">
           <a class="navigation__link">

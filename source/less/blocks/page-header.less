@@ -1,15 +1,47 @@
 .page-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: #ffffff;
   color: #000000;
   padding: 10px 20px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
     padding: 10px 30px;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   @media (min-width: @desktop-width) {
     padding: 10px 110px;
   }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+}
+
+.page-header__navigation {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  width: 100vw;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: 0;
+  }
+}
+
+.page-header__toggle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: lightgrey;
+  cursor: pointer;
+  border: none;
 }
