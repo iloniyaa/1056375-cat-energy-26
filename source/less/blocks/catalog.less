@@ -15,6 +15,10 @@
   color: @black;
   margin-top: 27px;
   margin-bottom: 49px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
 .catalog__list {
@@ -45,7 +49,8 @@
 
   @media (min-width: @desktop-width) {
     grid-template-rows: repeat(2, auto);
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto 20%;
+    column-gap: 79px;
     margin-bottom: 86px;
   }
 }
@@ -62,28 +67,81 @@
   margin: 0;
   margin-top: 50px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 76px;
+  }
 }
 
 .catalog__promo {
-  height: 200px;
+  height: 280px;
   background-image: url("../img/catalog-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+  }
 }
 
 .catalog__promo--wrapper {
   height: inherit;
   background-color: @green;
   opacity: 0.85;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.catalog__promo-icon {
+  display: block;
+  margin: auto;
+  padding-top: 59px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .catalog__text {
+  display: block;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: @white;
-  margin: 0;
+  width: 160px;
+  margin: auto;
+  text-align: center;
+  padding-top: 48px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
+    text-align: center;
+  }
 }
 
 .catalog__footer {

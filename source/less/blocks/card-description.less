@@ -1,4 +1,5 @@
 .card-description {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2px;
@@ -6,9 +7,35 @@
   font-size: 12px;
   line-height: 16px;
   color: @text-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.card-description__name:not(:last-of-type) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+  }
 }
 
 .card-description__value {
   margin: 0;
   justify-self: end;
+}
+
+.card-description__name {
+  position: relative;
+}
+
+.card-description__name::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    width: 200%;
+    height: 1px;
+    background-color: #c2c2c2;
+  }
 }

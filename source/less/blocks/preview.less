@@ -1,19 +1,42 @@
 .preview {
-  background-color: @white;
+  position: relative;
+  display: grid;
+  grid-template-rows: 72px 40px 300px 40px;
   background-image: url("../img/index-background-mobile.png");
   background-repeat: no-repeat;
   background-size: 100%;
   color: @white;
-  padding: 27px 20px;
+  padding: 27px 20px 0;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 27px 117px;
+    grid-template-rows: 120px 60px 629px;
+    align-items: end;
+    min-height: 818px;
+    padding: 62px 117px 0;
+    margin-bottom: 0;
     background-image: none;
     color: @black;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 27px 190px;
+    grid-template-columns: 420px auto;
+    grid-template-rows: 202px 60px 290px;
+    min-height: auto;
+    padding: 32px 190px 0;
+    margin-bottom: 82px;
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: url("../img/index-preview-desktop.png");
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      display: block;
+      background-size: 200px 200px;
+      z-index: -1;
+    }
   }
 }
 
@@ -24,22 +47,23 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 415px;
     text-align: left;
     color: @black;
   }
 }
 
 .preview__text {
+  align-self: end;
   text-align: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-top: 25px;
-  margin-bottom: 29px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
     text-align: left;
     color: @black;
   }
@@ -47,6 +71,22 @@
 
 .preview__picture {
   display: block;
+  align-self: end;
+  justify-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    height: 609px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    align-self: start;
+    width: auto;
+    height: 500px;
+    margin-left: -80px;
+  }
 }
 
 .preview__button {
@@ -55,6 +95,16 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 292px;
+    left: 120px;
+    width: 244px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    align-self: start;
+    margin-top: 52px;
     width: 244px;
   }
 }

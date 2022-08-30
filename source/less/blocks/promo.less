@@ -54,12 +54,22 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   text-transform: lowercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .promo__value {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .promo__price {
@@ -67,6 +77,11 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-top: 20px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__cats {
