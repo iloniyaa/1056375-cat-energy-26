@@ -5,10 +5,12 @@
   padding: 0 20px;
   background-color: @basic-grey;
 
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 30px;
+    height: 150px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,4 +22,8 @@
 
 .page-footer__logo {
   margin-top: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

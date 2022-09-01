@@ -1,5 +1,13 @@
 .custom {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .custom__title {
@@ -7,27 +15,59 @@
   margin-top: 27px;
   margin-bottom: 37px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 40px 40px 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 50px 0 56px;
+  }
 }
 
 .custom__text {
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .custom__notice {
   font-family: "Arial", sans-serif;
   line-height: 16px;
+  text-transform: none;
+  margin: 20px auto 32px auto;
+  margin-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
 }
 
 .custom__wrapper {
   display: grid;
 
   @media (min-width: @tablet-width) {
+    padding: 0 40px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 54px;
     gap: 61px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
     gap: 81px;
+    padding: 0;
   }
 }

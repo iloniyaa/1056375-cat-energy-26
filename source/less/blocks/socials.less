@@ -1,3 +1,14 @@
 .socials__list {
+  display: flex;
   margin-top: 52px;
+  list-style-type: none;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 24px;
 }
