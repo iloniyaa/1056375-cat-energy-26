@@ -79,30 +79,42 @@
 
 .catalog__promo {
   height: 280px;
-  background-image: url("../img/catalog-cat-mobile.jpg");
+  background-image: url("../img/catalog-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog-background-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog-background-tablet.jpg");
     height: 200px;
   }
 
+  @media (min-resolution: 2dppx) and (min-width: @tablet-width) {
+    background-image: url("../img/catalog-background-tablet@2x.jpg");
+  }
+
   @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog-background-desktop.jpg");
     height: 100%;
+  }
+
+  @media (min-resolution: 2dppx) and (min-width: @desktop-width) {
+    background-image: url("../img/catalog-background-desktop@2x.jpg");
   }
 }
 
-.catalog__promo--wrapper {
+.catalog__promo-wrapper {
   height: inherit;
-  background-color: @green;
-  opacity: 0.85;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: block;
   }
 }
