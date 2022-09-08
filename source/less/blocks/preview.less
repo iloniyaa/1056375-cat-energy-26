@@ -70,22 +70,26 @@
 }
 
 .preview__picture {
-  display: block;
   align-self: end;
   justify-self: center;
 
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    align-self: start;
+    margin-left: -80px;
+  }
+}
+
+.preview__image {
   @media (min-width: @tablet-width) {
     width: auto;
     height: 609px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/-1;
-    align-self: start;
     width: auto;
     height: 500px;
-    margin-left: -80px;
   }
 }
 
