@@ -59,22 +59,38 @@
 
 .features__item--leaf::before {
   content: "";
-  background-image: url("../img/icon-leaf.svg");
+  background-image: url("../img/icon-leaf-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-leaf-tablet.svg");
+  }
 }
 
 .features__item--tub::before {
   content: "";
-  background-image: url("../img/icon-tub.svg");
+  background-image: url("../img/icon-tub-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-tub-tablet.svg");
+  }
 }
 
 .features__item--eat::before {
   content: "";
-  background-image: url("../img/icon-eat.svg");
+  background-image: url("../img/icon-eat-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-eat-tablet.svg");
+  }
 }
 
 .features__item--alarm::before {
   content: "";
-  background-image: url("../img/icon-alarm.svg");
+  background-image: url("../img/icon-alarm-mobile.svg");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icon-alarm-tablet.svg");
+  }
 }
 
 .features__item::after {
