@@ -1,11 +1,13 @@
 .card {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
 
   @media (min-width: @tablet-width) {
+    grid-template-rows: 120px 123px 77px 100px 65px;
     grid-template-columns: 100%;
-    padding: 8px 36px 39px;
+    padding: 0 36px;
+    height: 520px;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,11 +67,19 @@
   margin: auto;
 }
 
+.card__image {
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+}
+
 .card__button {
   grid-column: 1/-1;
-  margin: 14px 0;
+  margin: 3px 0;
 
   @media (min-width: @tablet-width) {
+    align-self: end;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
@@ -107,4 +117,8 @@
 
 .card__list {
   margin-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
