@@ -1,6 +1,6 @@
 .main-menu {
   position: absolute;
-  top: 66px;
+  top: 64px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@
     flex-direction: row;
     width: auto;
     background-color: transparent;
+    margin-top: 2px;
   }
 }
 
@@ -33,6 +34,12 @@
       margin-right: 35px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
 }
 
 .main-menu__item:last-child {
@@ -47,11 +54,16 @@
   position: relative;
   font-family: inherit;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.5px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    letter-spacing: normal;
+  }
 }
 
 .main-menu__link--index {

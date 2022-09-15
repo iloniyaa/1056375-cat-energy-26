@@ -5,14 +5,25 @@
 
 .cat-comparison__image {
   position: absolute;
+  top: 5px;
+  left: 0;
   width: auto;
   height: auto;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    top: 85px;
+    left: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -12px;
+    left: -61px;
+  }
 }
 
-.cat-comparison__image img {
+.cat-comparison__wrapper img {
   display: block;
-  // vertical-align: middle;
 }
 
 .cat-comparison__slider {

@@ -71,7 +71,7 @@
       </h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--slim">
-          <b class="programs__title section-title">
+          <b class="programs__title programs__title--slim section-title">
             Похудение
           </b>
           <p class="programs__text description">
@@ -143,26 +143,34 @@
       </p>
 
       <div class="promo__stats-wrapper">
-        <div class="promo__stats">
-          <p class="promo__value">5 кг</p>
-          <p class="promo__name">снижение веса</p>
-        </div>
-        <div class="promo__stats">
-          <p class="promo__value">60 дней</p>
-          <p class="promo__name">затрачено времени</p>
-        </div>
+        <dl class="promo__stats">
+          <dt class="promo__value">5 кг</dt>
+          <dd class="promo__name">снижение<br> веса</dd>
+        </dl>
+        <dl class="promo__stats promo__stats--days">
+          <dt class="promo__value">60 дней</dt>
+          <dd class="promo__name">затрачено<br> времени</dd>
+        </dl>
       </div>
 
       <p class="promo__price">
-        Затраты на питание: 15 000 руб.
+        Затраты на питание:<span> 15 000 руб.</span>
       </p>
 
       <div class="promo__cats cat-comparison">
-        <div class="cat-comparison__image">
-          <img src="img/cat-fat.png" width="280" height="232" alt="Фото кота до перехода на Cat Energy.">
+        <div class="cat-comparison__wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
+            <img class="cat-comparison__image" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile.png 1x, img/cat-fat-mobile@2x.png 2x"
+              width="280" height="256" alt="Фото кота до перехода на Cat Energy.">
+          </picture>
         </div>
-        <div class="cat-comparison__image cat-comparison__image--overlay">
-          <img src="img/cat-skinny.png" width="243" height="232" alt="Фото кота после перехода на Cat Energy.">
+        <div class="cat-comparison__wrapper cat-comparison__wrapper--overlay">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/cat-skinny-tablet.png 1x, img/cat-skinny-tablet@2x.png 2x">
+            <img class="cat-comparison__image" src="img/cat-skinny-mobile.png" srcset="img/cat-skinny-mobile.png 1x, img/cat-skinny-mobile@2x.png 2x"
+              width="280" height="256" alt="Фото кота после перехода на Cat Energy.">
+          </picture>
         </div>
       </div>
     </section>
@@ -176,10 +184,10 @@
       <address class="contacts__location">
         <div class="contacts__location-wrapper">
           <p class="contacts__text">
-            Приглашаем к сотрудничеству дилеров!
+            Приглашаем<br> к сотрудничеству дилеров!
           </p>
           <p class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__wrapper">
@@ -196,7 +204,7 @@
         <h2 class="visually-hidden">
           Логотип магазина Cat Energy
         </h2>
-        <a class="page-footer__logo logo" href="index.html">
+        <a class="logo" href="index.html">
           <svg width="128" height="24"">
             <use href=" img/sprite.svg#icon-catenergy-logo"></use>
           </svg>
@@ -244,9 +252,6 @@
       <section class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <h2 class="copyright__title">
-            <span class="visually-hidden">
-              Разработано в
-            </span>
             HTML Academy
           </h2>
           <svg width="27" height="34">

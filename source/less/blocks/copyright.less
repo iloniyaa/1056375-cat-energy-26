@@ -1,17 +1,27 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
 .copyright__title {
+  display: inline-block;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: @text-dark-grey;
 }
 
-.copyright__link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
 .copyright__link svg {
-  margin-left: 22px;
+  display: inline-block;
   fill: @socials-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 22px;
+  }
 }

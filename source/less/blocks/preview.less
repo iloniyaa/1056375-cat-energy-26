@@ -17,7 +17,7 @@
     grid-template-rows: 120px 60px 629px;
     align-items: end;
     min-height: 818px;
-    padding: 62px 117px 0;
+    padding: 38px 117px 0;
     margin-bottom: 0;
     background-image: none;
     color: @black;
@@ -27,7 +27,7 @@
     grid-template-columns: 420px auto;
     grid-template-rows: 202px 60px 290px;
     min-height: auto;
-    padding: 32px 190px 0;
+    padding: 22px 190px 0;
     margin-bottom: 82px;
   }
 
@@ -81,11 +81,16 @@
   align-self: end;
   justify-self: center;
 
+
+  @media (min-width: @tablet-width) {
+    margin-left: -86px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 1/-1;
     align-self: start;
-    margin-left: -80px;
+    margin-left: -190px;
   }
 }
 
@@ -108,9 +113,11 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 292px;
+    top: 265px;
     left: 120px;
     width: 244px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
