@@ -6,14 +6,17 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     row-gap: 25px;
-    padding: 25px 37px;
+    padding: 25px 37px 30px;
+    outline: 1px solid #cdcdcd;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(2, 1fr) 30%;
+    grid-template-columns: repeat(2, 1fr) 245px;
     column-gap: 40px;
     align-items: center;
     padding: 15px 0;
+    outline: none;
+    box-shadow: inset 0 1px 0 #cdcdcd, inset 0 -1px 0 #cdcdcd;
   }
 }
 
